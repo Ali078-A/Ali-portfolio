@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "static-pe-analyzer"
+version = "0.1.0"
+description = "Safe, read-only static analysis for Windows PE files"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+pe-analyze = "pe_analyzer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
